@@ -1,0 +1,212 @@
+/* Resetting some default styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Basic layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    cursor: pointer; /* Indicates an interactive element */
+}
+
+.nav-list a:hover {
+    background-color: #575757;
+    color: #ffeb3b; /* Changes text color on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+}
+
+/* Styling the active (non-interactive) navigation link */
+.nav-list a.active {
+    background-color: #888;
+    color: #fff;
+    pointer-events: none; /* Makes the link non-interactive */
+}
+
+/* Button Styles */
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer; /* Indicates an interactive element */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Removes underline from anchor buttons */
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:active {
+    background-color: #004085;
+}
+
+/* Flexbox styles for the Help section */
+#help {
+    background-color: #e8f0fe;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.flex-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    flex: 1;
+}
+
+/* Responsive design for Flexbox */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* Responsive design for the navigation */
+@media (max-width: 768px) {
+    .nav-list {
+        text-align: center;
+    }
+
+    .nav-list li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Card Styles */
+#our-friends {
+    background-color: #e8f0fe;
+    padding: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1;
+    min-width: 200px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Link Styles */
+.card-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+.icon-email::before {
+    content: url('path-to-email-icon.svg'); /* Replace with the path to the email icon */
+}
+
+.icon-phone::before {
+    content: url('path-to-phone-icon.svg'); /* Replace with the path to the phone icon */
+}
+
+.icon-location::before {
+    content: url('path-to-location-icon.svg'); /* Replace with the path to the location icon */
+}
